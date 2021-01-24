@@ -1,38 +1,332 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+* {
+ 
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  margin-top: 10px;
+ background-color: white !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand{
+  font-weight: 900;
+  font-size: 1.4rem !important;
+  color: #05022e !important;
+}
+.logo{
+  width: 140px;
+  height: 40px;
+  
+}
+.navbar NavLink {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu_active {
+  font-weight: bold !important;
+  border-bottom: 1px solid #0f0a53 !important;
+}
+.navbar a:hover {
+  color: #010a14 !important;
+}
+@media (max-width: 991px){
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  .manu_active {
+    font-weight: bold;
+    border-bottom: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* 
+============================================================================================
+#Main Landing section
+============================================================================================ */
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+section h1 {
+  margin: 0 0 10px 0;
+  font-size: 36px;
+  font-weight: 1000;
+  color: rgb(5, 1, 1);
+
+}
+.Brand-name{
+  font-size: 30px;
+  color: blue;
+}
+#header h2 {
+  color: #280352;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: transparent;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  
+}
+#header h3 {
+  color: #040504;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+#header .btn-get-started {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #000305;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+  background-color: #2e7db3;
   color: white;
+  font-weight: bold;
+}
+.header-img{
+  text-align: right;
+  margin-top: 70px !important;
+  
+  
+}
+section img{
+  border-radius: 800px;
+  width: 250px;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 
+============================================================
+Card
+============================================================ */
+
+.row{
+  margin-top: 40px;
+}
+.col img{
+    
+    height: 200px;
+    margin: 5px;
+    padding-right: 10px;
+
+}
+.card {
+  margin-top: 10px !important;
+  padding-top: 10px;
+}
+.adobe{ margin-top: 20px !important;}
+.card-text{
+  text-align: justify;
+}
+.card-title{
+  text-transform: uppercase;
+  text-decoration: darkolivegreen;
+  font-weight: 400 !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cd-bt {
+  align-items: center !important;
+}
+
+/* =============================================================
+Contact
+============================================================ */
+.form-label{
+  color: white;
+  font-weight: bold;
+}
+form{
+  background-color: #d64695;
+  padding: 50px;
+  border-radius: 30px;
+}
+.bg-primary{
+  border: 30px !important;
+}
+
+.ico{
+  margin: 20px !important ;
+}
+.fods{
+  text-align: justify;
+}
+
+
+
+
+/* =================================================================
+React JS Page
+================================================================= */
+
+.tit{
+  font-weight: bold;
+  color: rgb(80, 37, 150);
+  background-color: rgb(233, 217, 217);
+  padding: 10px;
+}
+
+
+
+/* 
+===================================================================
+Web Designing
+==================================================================
+*/
+.skil{
+  font-weight: bold;
+}
+
+
+
+
+
+.card-body{
+  height: 100%;
+  max-height: fit-content;
+}
+
+
+
+/* .MS{
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 60px;
+} */
+
+
+/* @media screen and (max-width:815px){
+  .card{
+    width: 100%;
+  } */
+
+@media screen and (max-width:515px){
+  .img-fluid{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  
   }
-  to {
-    transform: rotate(360deg);
+  .hom{
+    margin-top: 50px !important;
+    padding-top: 50px !important;
+  }
+  .animated {
+ animation: none;   
+  }
+  /* @-webkit-keyframes up-down {
+    0%{
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  } */
+  .backg{
+    background-color: none;
+    background-position: bottom;
+    background-size: cover;
+    
+  }
+  
+  .ab{
+    width: 70%;
+  }
+  
+  .hed{
+    margin-top: 40px;
+    color: burlywood !important;
   }
 }
+
+.abds{
+  width: 400px;
+  background-color: blueviolet;
+  padding: 50px;
+  border-radius: 50px;
+}
+/* .dgree-title */
+/* 
+==================================================================
+ABout page
+================================================================== */
+
+
+.Education{
+  font-weight: bold;
+  color: #110c57;
+  font-size: xx-large;
+}
+.date{
+  text-align: right !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+.edu h5{
+  color: #1e11df;
+  font-weight: bold;
+}
+.edu {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
